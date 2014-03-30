@@ -6,12 +6,19 @@
 
 </h2>
 <br/>
+<br/>
 <%= simple_form_for @post do |f| %>
+	
 	<%= f.input :title, label: 'What is this image about?', placeholder: 'Poverty, Human Rights Violations' %>
+	<br />
 	<%= f.input :description, label: 'Tell me more', placeholder: 'Favela Maceio, El Salado' %>
 	<br />
-
+	<%= f.input :image %>
+	<br />
 	<%= f.button :submit, :class => 'btn btn-warning' %>
+	
+	
+
 
 <% end %>
 
