@@ -1,0 +1,18 @@
+<div class="genie-box col-xs-6 col-xs-offset-3">
+
+<h2>
+
+	Upload your Image
+
+</h2>
+<br/>
+<%= simple_form_for @post do |f| %>
+	<%= f.input :title, label: 'What is this image about?', placeholder: 'Poverty, Human Rights Violations' %>
+	<%= f.input :description, label: 'Tell me more', placeholder: 'Favela Maceio, El Salado' %>
+	<br />
+
+	<%= f.button :submit, :class => 'btn btn-warning' %>
+
+<% end %>
+
+</div>
